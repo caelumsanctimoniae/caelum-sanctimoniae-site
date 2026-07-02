@@ -99,13 +99,36 @@ a {
   display: block;
 }
 
+.logo-link::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 50%;
+  width: 135%;
+  height: 115%;
+  transform: translate(-50%, -50%);
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(3, 3, 3, 0.92) 0%,
+      rgba(3, 3, 3, 0.78) 38%,
+      rgba(3, 3, 3, 0.32) 68%,
+      rgba(3, 3, 3, 0) 100%
+    );
+  filter: blur(8px);
+  pointer-events: none;
+}
+
 .logo {
   width: min(360px, 38vw);
   height: auto;
   max-height: none;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 16px rgba(0, 0, 0, 0.95));
+  filter:
+    drop-shadow(0 0 12px rgba(0, 0, 0, 1))
+    drop-shadow(0 0 28px rgba(0, 0, 0, 0.95));
 }
 
 .nav {
