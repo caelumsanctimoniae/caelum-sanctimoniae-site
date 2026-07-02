@@ -43,8 +43,8 @@ import '../styles/global.css';
 
         <nav class="nav" aria-label="Main navigation">
           <a href="#home" data-scroll-target="home">Home</a>
-          <a href="#about" data-scroll-target="about-title">About</a>
-          <a href="#music" data-scroll-target="music-title">Music</a>
+          <a href="#about" data-scroll-target="about">About</a>
+          <a href="#music" data-scroll-target="music">Music</a>
         </nav>
 
         <div class="socials" aria-label="Social links">
@@ -117,7 +117,7 @@ import '../styles/global.css';
             <a
               class="button secondary"
               href="#about"
-              data-scroll-target="about-title"
+              data-scroll-target="about"
             >
               Enter the Ruins
             </a>
@@ -127,7 +127,7 @@ import '../styles/global.css';
 
       <section class="section">
         <div class="section-inner">
-          <h2 id="about-title">About</h2>
+          <h2 id="about">About</h2>
           <p>
             Caelum Sanctimoniae is a melodic blackened metal project from Finland,
             founded in 2025 by Morveth, Alpha Nihili.
@@ -141,7 +141,7 @@ import '../styles/global.css';
 
       <section class="section section-dark">
         <div class="section-inner">
-          <h2 id="music-title">Music</h2>
+          <h2 id="music">Music</h2>
 
           <article class="release-card">
             <div>
@@ -167,30 +167,32 @@ import '../styles/global.css';
     </main>
 
     <script is:inline>
-      document.querySelectorAll('[data-scroll-target]').forEach((link) => {
-        link.addEventListener('click', (event) => {
-          event.preventDefault();
+      document.addEventListener('click', (event) => {
+        const link = event.target.closest('a[data-scroll-target]');
 
-          const targetId = link.getAttribute('data-scroll-target');
-          const hash = link.getAttribute('href');
-          const target = document.getElementById(targetId);
+        if (!link) return;
 
-          if (!target) return;
+        event.preventDefault();
 
-          const offset = window.innerWidth <= 860 ? 350 : 130;
+        const targetId = link.getAttribute('data-scroll-target');
+        const hash = link.getAttribute('href');
+        const target = document.getElementById(targetId);
 
-          const targetPosition =
-            target.getBoundingClientRect().top + window.scrollY - offset;
+        if (!target) return;
 
-          window.scrollTo({
-            top: Math.max(0, targetPosition),
-            behavior: 'smooth',
-          });
+        const offset = window.innerWidth <= 860 ? 350 : 130;
 
-          if (hash) {
-            history.pushState(null, '', hash);
-          }
+        const targetPosition =
+          target.getBoundingClientRect().top + window.scrollY - offset;
+
+        window.scrollTo({
+          top: Math.max(0, targetPosition),
+          behavior: 'smooth',
         });
+
+        if (hash) {
+          history.pushState(null, '', hash);
+        }
       });
     </script>
   </body>
