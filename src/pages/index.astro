@@ -102,15 +102,6 @@ import '../styles/global.css';
           <p class="subtitle">
             Finnish melodic blackened metal — false divinity, ruined belief,
             and the self that remains.
-
-                        Finnish melodic blackened metal — false divinity, ruined belief,
-            and the self that remains.
-
-                        Finnish melodic blackened metal — false divinity, ruined belief,
-            and the self that remains.
-
-                        Finnish melodic blackened metal — false divinity, ruined belief,
-            and the self that remains.
           </p>
 
           <div class="hero-actions">
@@ -145,25 +136,6 @@ import '../styles/global.css';
             The music draws from Scandinavian black metal foundations, blackened
             death metal intensity and concept-driven storytelling.
           </p>
-          <p>
-            Caelum Sanctimoniae is a melodic blackened metal project from Finland,
-            founded in 2025 by Morveth, Alpha Nihili.
-          </p>
-          <p>
-            The music draws from Scandinavian black metal foundations, blackened
-            death metal intensity and concept-driven storytelling.
-          </p>
-                    <p>
-            Caelum Sanctimoniae is a melodic blackened metal project from Finland,
-            founded in 2025 by Morveth, Alpha Nihili.
-          </p>
-          <p>
-            The music draws from Scandinavian black metal foundations, blackened
-            death metal intensity and concept-driven storytelling.
-          </p>
-
-
-
         </div>
       </section>
 
@@ -192,6 +164,62 @@ import '../styles/global.css';
           </article>
         </div>
       </section>
+
+      <footer class="footer">
+        <div class="footer-inner">
+          <p class="footer-mark">Caelum Sanctimoniae</p>
+          <p class="footer-text">
+            Finnish melodic blackened metal — Goblins' Den Studios.
+          </p>
+
+          <div class="footer-socials" aria-label="Footer social links">
+            <a
+              href="https://www.instagram.com/caelumsanctimoniae"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.youtube.com/@CaelumSanctimoniae"
+              aria-label="YouTube"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a
+              href="https://open.spotify.com/artist/7IlLu895PeUQNvSUoBZHti"
+              aria-label="Spotify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-spotify"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@caelum.sanctimoniae"
+              aria-label="TikTok"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/caelumsanctimoniae"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script is:inline>
@@ -205,10 +233,13 @@ import '../styles/global.css';
         const targetId = link.getAttribute('data-scroll-target');
         const hash = link.getAttribute('href');
         const target = document.getElementById(targetId);
+        const header = document.querySelector('.header');
 
         if (!target) return;
 
-        const offset = window.innerWidth <= 860 ? 350 : 300;
+        const headerHeight = header ? header.getBoundingClientRect().height : 0;
+        const extraSpace = window.innerWidth <= 860 ? 18 : 24;
+        const offset = headerHeight + extraSpace;
 
         const targetPosition =
           target.getBoundingClientRect().top + window.scrollY - offset;
