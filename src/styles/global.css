@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Sinistre';
-  src: url('/caelum-sanctimoniae-site/fonts/Sinistre-Regular.woff2') format('woff2');
+  src: url('/fonts/Sinistre-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Sinistre';
-  src: url('/caelum-sanctimoniae-site/fonts/Sinistre-Bold.woff2') format('woff2');
+  src: url('/fonts/Sinistre-Bold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Sinistre';
-  src: url('/caelum-sanctimoniae-site/fonts/Sinistre-Dark.woff2') format('woff2');
+  src: url('/fonts/Sinistre-Dark.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
