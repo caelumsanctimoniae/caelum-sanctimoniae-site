@@ -37,6 +37,9 @@
 
   --line: rgba(232, 230, 223, 0.14);
   --shadow: rgba(0, 0, 0, 0.92);
+
+  --body-font: 'Cormorant Garamond', serif;
+  --ceremonial-font: 'Cinzel', serif;
 }
 
 * {
@@ -48,10 +51,12 @@ html {
 }
 
 body {
+
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--body-font);
+
 }
 
 a {
@@ -200,10 +205,11 @@ a {
 .eyebrow {
   margin: 0 0 18px;
   color: var(--muted);
+  font-family: var(--ceremonial-font);
   letter-spacing: 0.28em;
   text-transform: uppercase;
-  font-weight: 800;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 h1,
@@ -216,23 +222,24 @@ h3 {
 h1 {
   color: var(--accent-bright);
   font-family: 'Sinistre', serif;
-  font-size: clamp(52px, 7.2vw, 112px);
-  font-weight: 900;
-  letter-spacing: 0.01em;
-  line-height: 0.92;
+  font-size: clamp(52px, 7vw, 104px);
+  font-weight: 600;
+  letter-spacing: 0.035em;
+  line-height: 0.96;
   text-transform: none;
   text-shadow:
     0 4px 20px rgba(0, 0, 0, 0.95),
-    0 0 34px rgba(232, 230, 223, 0.08);
+    0 0 28px rgba(232, 230, 223, 0.06);
 }
 
 .subtitle {
   max-width: 780px;
   margin: 28px auto 0;
   color: var(--text);
-  font-size: clamp(18px, 2.2vw, 28px);
+  font-family: var(--body-font);
+  font-size: clamp(21px, 2.2vw, 30px);
   line-height: 1.35;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .hero-actions {
@@ -305,15 +312,16 @@ h1 {
   color: var(--accent-bright);
   font-family: 'Sinistre', serif;
   font-size: clamp(44px, 6vw, 82px);
-  font-weight: 900;
+  font-weight: 600;
   text-transform: none;
   margin-bottom: 32px;
 }
 
 .section p {
   color: var(--muted);
-  font-size: 21px;
-  line-height: 1.7;
+  font-family: var(--body-font);
+  font-size: 23px;
+  line-height: 1.65;
   max-width: 880px;
 }
 
@@ -339,9 +347,13 @@ h1 {
 .release-card h3 {
   font-family: 'Sinistre', serif;
   font-size: clamp(32px, 4vw, 58px);
-  font-weight: 900;
+  font-weight: 600;
   color: var(--text);
   text-transform: none;
+}
+
+section {
+  scroll-margin-top: 300px;
 }
 
 /* RESPONSIVE */
@@ -374,6 +386,10 @@ h1 {
         rgba(3, 3, 3, 0.32) 91%,
         rgba(3, 3, 3, 0) 100%
       );
+  }
+
+    section {
+    scroll-margin-top: 370px;
   }
 
   .logo-link,
