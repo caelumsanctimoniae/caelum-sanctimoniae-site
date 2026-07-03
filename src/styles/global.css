@@ -407,14 +407,14 @@ h1 {
     left: 0;
     width: 100%;
     height: auto;
-    min-height: 350px;
+    min-height: 285px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 
-    gap: 16px;
-    padding: 20px 20px 120px;
+    gap: 12px;
+    padding: 16px 20px 90px;
 
     pointer-events: none;
 
@@ -422,9 +422,9 @@ h1 {
       linear-gradient(
         to bottom,
         rgba(3, 3, 3, 1) 0%,
-        rgba(3, 3, 3, 0.98) 52%,
-        rgba(3, 3, 3, 0.78) 74%,
-        rgba(3, 3, 3, 0.32) 91%,
+        rgba(3, 3, 3, 0.98) 42%,
+        rgba(3, 3, 3, 0.74) 64%,
+        rgba(3, 3, 3, 0.26) 84%,
         rgba(3, 3, 3, 0) 100%
       );
   }
@@ -439,10 +439,10 @@ h1 {
     position: static;
     transform: none;
     display: flex;
-    gap: 22px;
+    gap: 20px;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 23px;
     padding: 0;
     width: auto;
   }
@@ -460,7 +460,7 @@ h1 {
   }
 
   .logo {
-    width: min(82vw, 330px);
+    width: min(72vw, 275px);
     height: auto;
     max-height: none;
     object-fit: contain;
@@ -471,7 +471,7 @@ h1 {
     position: static;
     transform: none;
     display: flex;
-    gap: 26px;
+    gap: 24px;
     align-items: center;
     justify-content: center;
     font-size: 16px;
@@ -485,7 +485,7 @@ h1 {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 390px 20px 80px;
+    padding: 315px 20px 80px;
     background:
       radial-gradient(circle at center top, rgba(232, 230, 223, 0.08), transparent 34%),
       linear-gradient(to bottom, rgba(3, 3, 3, 0.2), rgba(3, 3, 3, 1) 86%),
@@ -562,18 +562,18 @@ h1 {
 
 @media (max-width: 420px) {
   .header {
-    min-height: 340px;
-    gap: 14px;
-    padding: 18px 16px 115px;
+    min-height: 275px;
+    gap: 12px;
+    padding: 14px 16px 86px;
   }
 
   .socials {
     gap: 18px;
-    font-size: 24px;
+    font-size: 23px;
   }
 
   .logo {
-    width: min(86vw, 310px);
+    width: min(76vw, 270px);
   }
 
   .nav {
@@ -582,7 +582,7 @@ h1 {
   }
 
   .hero {
-    padding-top: 380px;
+    padding-top: 305px;
   }
 
   .eyebrow {
@@ -591,7 +591,7 @@ h1 {
   }
 
   h1 {
-    font-size: clamp(46px, 15vw, 66px);
+    font-size: clamp(44px, 14vw, 62px);
   }
 
   .subtitle {
