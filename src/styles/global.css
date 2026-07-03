@@ -422,10 +422,10 @@ background:
   linear-gradient(
     to bottom,
     rgba(3, 3, 3, 1) 0%,
-    rgba(3, 3, 3, 0.92) 28%,
-    rgba(3, 3, 3, 0.45) 50%,
-    rgba(3, 3, 3, 0.10) 68%,
-    rgba(3, 3, 3, 0) 82%
+    rgba(3, 3, 3, 0.88) 24%,
+    rgba(3, 3, 3, 0.36) 42%,
+    rgba(3, 3, 3, 0.08) 56%,
+    rgba(3, 3, 3, 0) 68%
   );
   }
 
@@ -568,15 +568,15 @@ background:
     gap: 12px;
     padding: 14px 16px 86px;
 
-  background:
-    linear-gradient(
-      to bottom,
-      rgba(3, 3, 3, 1) 0%,
-      rgba(3, 3, 3, 0.92) 28%,
-      rgba(3, 3, 3, 0.45) 50%,
-      rgba(3, 3, 3, 0.10) 68%,
-      rgba(3, 3, 3, 0) 82%
-    );
+background:
+  linear-gradient(
+    to bottom,
+    rgba(3, 3, 3, 1) 0%,
+    rgba(3, 3, 3, 0.88) 24%,
+    rgba(3, 3, 3, 0.36) 42%,
+    rgba(3, 3, 3, 0.08) 56%,
+    rgba(3, 3, 3, 0) 68%
+  );
   }
 
   .socials {
