@@ -41,11 +41,12 @@ import '../styles/global.css';
           />
         </a>
 
-        <nav class="nav" aria-label="Main navigation">
-          <a href="#home" data-scroll-target="home">Home</a>
-          <a href="#about" data-scroll-target="about">About</a>
-          <a href="#music" data-scroll-target="music">Music</a>
-        </nav>
+<nav class="nav" aria-label="Main navigation">
+  <a href="#home" data-scroll-target="home">Home</a>
+  <a href="#about" data-scroll-target="about">About</a>
+  <a href="#music" data-scroll-target="music">Music</a>
+  <a href="#news" data-scroll-target="news">News</a>
+</nav>
 
         <div class="socials" aria-label="Social links">
           <a
@@ -126,25 +127,37 @@ import '../styles/global.css';
       </section>
 
 <section class="section">
-  <div class="section-inner">
-    <h2 id="about">About</h2>
-    <p>
-      Caelum Sanctimoniae is a Finnish melodic blackened metal project founded
-      in 2025 by Morveth, Alpha Nihili. The music draws from Scandinavian metal,
-      blackened death metal intensity and atmospheric composition, with emphasis
-      on structured songwriting, layered guitar work and narrative cohesion.
-    </p>
-    <p>
-      The debut album, Hollow Crowns of the False Seraphim, is a concept-driven
-      release exploring consciousness, transformation and the dismantling of
-      inherited truths, false divinities and imposed systems of belief.
-    </p>
-    <p>
-      Work is currently underway on the follow-up album, At the Ruins of the New
-      Dawn, which continues the story of The Pale and turns toward the aftermath
-      of liberation: isolation, memory, consequence and the burden of a world
-      built solely from the self.
-    </p>
+  <div class="section-inner about-layout">
+    <div class="about-copy">
+      <h2 id="about">About</h2>
+      <p>
+        Caelum Sanctimoniae is a Finnish melodic blackened metal project founded
+        in 2025 by Morveth, Alpha Nihili. The music draws from Scandinavian metal,
+        blackened death metal intensity and atmospheric composition, with emphasis
+        on structured songwriting, layered guitar work and narrative cohesion.
+      </p>
+      <p>
+        The debut album, Hollow Crowns of the False Seraphim, is a concept-driven
+        release exploring consciousness, transformation and the dismantling of
+        inherited truths, false divinities and imposed systems of belief.
+      </p>
+      <p>
+        Work is currently underway on the follow-up album, At the Ruins of the New
+        Dawn, which continues the story of The Pale and turns toward the aftermath
+        of liberation: isolation, memory, consequence and the burden of a world
+        built solely from the self.
+      </p>
+    </div>
+
+    <figure class="about-portrait">
+      <img
+        src="/images/morveth.png"
+        alt="Morveth, Alpha Nihili of Caelum Sanctimoniae"
+      />
+      <figcaption>
+        Morveth, Alpha Nihili
+      </figcaption>
+    </figure>
   </div>
 </section>
 
@@ -194,7 +207,7 @@ import '../styles/global.css';
 
         <div class="release-side">
           <img
-            src="/images/at-the-ruins-cover.jpg"
+            src="/images/ruins-cover.png"
             alt="At the Ruins of the New Dawn album cover"
             class="release-cover"
           />
@@ -208,9 +221,54 @@ import '../styles/global.css';
   </div>
 </section>
 
+<section class="section">
+  <div class="section-inner">
+    <h2 id="news">News</h2>
+
+    <div class="news-list">
+
+      <article class="news-card">
+        <p class="news-date">April 2026</p>
+        <h3>Heikki Saari to perform drums on the upcoming album</h3>
+        <p>
+          The upcoming Caelum Sanctimoniae album will feature drums performed by
+          Heikki Saari (Finntroll, Crownshift), bringing a new physical dimension to the project’s next
+          chapter.
+        </p>
+      </article>
+
+      <article class="news-card">
+        <p class="news-date">February 2026</p>
+        <h3>At the Ruins of the New Dawn in progress</h3>
+        <p>
+          Work continues on the follow-up album to Hollow Crowns of the False
+          Seraphim. The new record expands the story of The Pale and turns toward
+          consequence, isolation, memory and collapse.
+        </p>
+      </article>
+
+      <article class="news-card">
+        <p class="news-date">November 2025</p>
+        <h3>Hollow Crowns of the False Seraphim released</h3>
+        <p>
+          The debut full-length album is now available. The record follows a
+          metaphysical narrative of false divinity, imposed belief and the self
+          that remains after inherited truths collapse.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
       <footer class="footer">
         <div class="footer-inner">
           <p class="footer-mark">Caelum Sanctimoniae</p>
+
+          <p class="footer-contact">
+  <a href="mailto:contact@caelumsanctimoniae.com">
+    contact@caelumsanctimoniae.com
+  </a>
+</p>
 
 
           <div class="footer-socials" aria-label="Footer social links">
