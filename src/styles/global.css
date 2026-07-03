@@ -460,7 +460,7 @@ h1 {
   }
 
   .logo {
-    width: min(72vw, 275px);
+    width: min(68vw, 255px);
     height: auto;
     max-height: none;
     object-fit: contain;
@@ -504,6 +504,8 @@ h1 {
     font-size: 10px;
     letter-spacing: 0.22em;
     margin-bottom: 18px;
+    color: var(--accent);
+    opacity: 0.82;
   }
 
   h1 {
@@ -573,7 +575,7 @@ h1 {
   }
 
   .logo {
-    width: min(76vw, 270px);
+    width: min(70vw, 245px);
   }
 
   .nav {
@@ -588,6 +590,8 @@ h1 {
   .eyebrow {
     font-size: 9px;
     letter-spacing: 0.2em;
+    color: var(--accent);
+    opacity: 0.82;
   }
 
   h1 {
