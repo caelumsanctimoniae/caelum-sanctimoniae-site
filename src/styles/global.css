@@ -330,12 +330,16 @@ h1 {
 
 .release-card {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 42px;
   align-items: center;
   padding: 36px;
   border: 1px solid var(--line);
   background: rgba(255, 255, 255, 0.035);
+}
+
+.release-info {
+  min-width: 0;
 }
 
 .release-label {
@@ -354,6 +358,25 @@ h1 {
   font-weight: 600;
   color: var(--text);
   text-transform: none;
+}
+
+.release-side {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 22px;
+}
+
+.release-cover {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  border: 1px solid rgba(232, 230, 223, 0.18);
+  filter:
+    grayscale(1)
+    contrast(1.08)
+    brightness(0.88);
 }
 
 /* Footer */
@@ -547,10 +570,21 @@ background:
     font-size: 20px;
   }
 
-  .release-card {
-    grid-template-columns: 1fr;
-    padding: 24px;
-  }
+.release-card {
+  grid-template-columns: 1fr;
+  padding: 24px;
+  gap: 28px;
+}
+
+.release-side {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.release-cover {
+  max-width: 320px;
+}
 
   .footer {
     min-height: 32vh;
