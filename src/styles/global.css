@@ -405,48 +405,72 @@ h1 {
 }
 
 .about-portrait {
-  margin: 0;
+  width: min(100%, 300px);
+  margin: 0 auto;
+  position: relative;
+}
+
+.about-portrait::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  inset: -34px;
+  background:
+    radial-gradient(
+      ellipse at center,
+      rgba(232, 230, 223, 0.055) 0%,
+      rgba(3, 3, 3, 0.62) 48%,
+      rgba(3, 3, 3, 0) 78%
+    );
+  filter: blur(18px);
+  pointer-events: none;
 }
 
 .about-portrait img {
+  position: relative;
+  z-index: 1;
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
+  opacity: 0.84;
   filter:
     grayscale(1)
-    contrast(1.08)
-    brightness(0.82);
+    contrast(0.96)
+    brightness(0.78);
 
   -webkit-mask-image:
     radial-gradient(
       ellipse at center,
       black 0%,
-      black 58%,
-      rgba(0, 0, 0, 0.75) 72%,
-      rgba(0, 0, 0, 0.25) 86%,
-      transparent 100%
+      black 40%,
+      rgba(0, 0, 0, 0.66) 60%,
+      rgba(0, 0, 0, 0.18) 78%,
+      transparent 96%
     );
   mask-image:
     radial-gradient(
       ellipse at center,
       black 0%,
-      black 58%,
-      rgba(0, 0, 0, 0.75) 72%,
-      rgba(0, 0, 0, 0.25) 86%,
-      transparent 100%
+      black 40%,
+      rgba(0, 0, 0, 0.66) 60%,
+      rgba(0, 0, 0, 0.18) 78%,
+      transparent 96%
     );
 }
 
 .about-portrait figcaption {
-  margin-top: 14px;
+  position: relative;
+  z-index: 2;
+  margin-top: 10px;
   color: var(--accent);
   font-family: var(--ceremonial-font);
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   text-align: center;
+  opacity: 0.9;
 }
 
 /* News */
