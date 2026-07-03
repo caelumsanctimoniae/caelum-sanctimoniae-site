@@ -518,6 +518,9 @@ background:
     font-size: 20px;
     line-height: 1.35;
     margin-top: 28px;
+    color: var(--accent-bright);
+    opacity: 0.95;
+
   }
 
   .hero-actions {
@@ -610,6 +613,8 @@ background:
 
   .subtitle {
     font-size: 19px;
+    color: var(--accent-bright);
+    opacity: 0.95;
   }
 
   .footer-mark {
