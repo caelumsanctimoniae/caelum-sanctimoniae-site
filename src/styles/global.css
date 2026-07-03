@@ -439,6 +439,10 @@ h1 {
     contrast(0.96)
     brightness(0.78);
 
+  user-select: none;
+  -webkit-user-drag: none;
+  pointer-events: none;
+
   -webkit-mask-image:
     radial-gradient(
       ellipse at center,
