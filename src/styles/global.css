@@ -391,6 +391,81 @@ h1 {
     brightness(0.88);
 }
 
+.bandcamp-support {
+  position: relative;
+  overflow: hidden;
+  margin-top: 46px;
+  padding: 34px;
+  border: 1px solid var(--line);
+  background:
+    radial-gradient(circle at center, rgba(232, 230, 223, 0.045), transparent 58%),
+    rgba(255, 255, 255, 0.025);
+  text-align: center;
+}
+
+.bandcamp-support::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  z-index: 0;
+  background:
+    radial-gradient(
+      ellipse at 22% 45%,
+      rgba(232, 230, 223, 0.10) 0%,
+      rgba(232, 230, 223, 0.045) 24%,
+      transparent 52%
+    ),
+    radial-gradient(
+      ellipse at 72% 58%,
+      rgba(232, 230, 223, 0.08) 0%,
+      rgba(232, 230, 223, 0.035) 26%,
+      transparent 56%
+    ),
+    radial-gradient(
+      ellipse at 48% 35%,
+      rgba(232, 230, 223, 0.055) 0%,
+      rgba(232, 230, 223, 0.025) 30%,
+      transparent 64%
+    );
+  filter: blur(22px);
+  opacity: 0.72;
+  pointer-events: none;
+}
+
+.bandcamp-support::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(
+      115deg,
+      transparent 0%,
+      rgba(232, 230, 223, 0.035) 34%,
+      transparent 62%
+    );
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.bandcamp-support p,
+.bandcamp-support .button {
+  position: relative;
+  z-index: 1;
+}
+
+.bandcamp-support p {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  color: var(--muted);
+  font-size: 22px;
+  line-height: 1.55;
+}
+
+.bandcamp-support .button {
+  min-width: 240px;
+}
+
 /* About */
 
 .about-layout {
@@ -723,6 +798,14 @@ h1 {
   max-width: 320px;
 }
 
+.bandcamp-support {
+  margin-top: 34px;
+  padding: 26px 22px;
+}
+
+.bandcamp-support p {
+  font-size: 20px;
+}
 
 .about-layout {
   grid-template-columns: 1fr;
